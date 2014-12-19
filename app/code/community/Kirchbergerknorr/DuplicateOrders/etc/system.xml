@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <kirchbergerknorr translate="label">
+            <label>kirchbergerknorr</label>
+            <sort_order>1</sort_order>
+        </kirchbergerknorr>
+    </tabs>
+    <sections>
+        <kirchbergerknorr>
+            <label>System</label>
+            <tab>kirchbergerknorr</tab>
+            <frontend_type>text</frontend_type>
+            <show_in_default>1</show_in_default>
+            <show_in_website>0</show_in_website>
+            <show_in_store>0</show_in_store>
+            <sort_order>1</sort_order>
+            <groups>
+                <duplicate_orders>
+                    <label>Cancel Duplicate Orders</label>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <sort_order>2</sort_order>
+                    <fields>
+                        <active translate="label">
+                            <label>Active</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </active>
+                        <log translate="label">
+                            <label>Log</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </log>
+                        <cron translate="label">
+                            <label>Sync Cron Expr</label>
+                            <comment>
+                                <![CDATA[For help in creating expressions check this <a href="http://www.openjs.com/scripts/jslibrary/demos/crontab.php" target="_blank">site</a>.]]>
+                            </comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </cron>
+                    </fields>
+                </duplicate_orders>
+            </groups>
+        </kirchbergerknorr>
+    </sections>
+</config>

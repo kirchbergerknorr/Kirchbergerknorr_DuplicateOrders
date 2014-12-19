@@ -1,0 +1,4 @@
+app/code/community/Kirchbergerknorr/DuplicateOrders/etc/config.xml app/code/community/Kirchbergerknorr/DuplicateOrders/etc/config.xml
+app/code/community/Kirchbergerknorr/DuplicateOrders/etc/system.xml app/code/community/Kirchbergerknorr/DuplicateOrders/etc/system.xml
+app/code/community/Kirchbergerknorr/DuplicateOrders/Model/Observer.php app/code/community/Kirchbergerknorr/DuplicateOrders/Model/Observer.php
+app/etc/modules/Kirchbergerknorr_DuplicateOrders.xml app/etc/modules/Kirchbergerknorr_DuplicateOrders.xml

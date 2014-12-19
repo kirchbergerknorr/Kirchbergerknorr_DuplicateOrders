@@ -1,0 +1,8 @@
+{
+    "name": "kirchbergerknorr/Kirchbergerknorr_DuplicateOrders",
+    "description": "Kirchbergerknorr DuplicateOrders",
+    "type": "magento-module",
+    "authors": [
+        {"name": "Aleksey Razbakov", "email": "ar@kirchbergerknorr.de"}
+    ]
+}

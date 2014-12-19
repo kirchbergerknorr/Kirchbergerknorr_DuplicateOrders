@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Kirchbergerknorr_DuplicateOrders>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Kirchbergerknorr_DuplicateOrders>
+    </modules>
+</config>

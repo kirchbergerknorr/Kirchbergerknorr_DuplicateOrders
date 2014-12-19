@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Kirchbergerknorr_DuplicateOrders>
+            <version>0.1.0</version>
+        </Kirchbergerknorr_DuplicateOrders>
+    </modules>
+    <default>
+        <kirchbergerknorr>
+            <duplicate_orders>
+                <active>1</active>
+                <log>1</log>
+                <cron>*/5 * * * *</cron>
+            </duplicate_orders>
+        </kirchbergerknorr>
+    </default>
+    <global>
+        <models>
+            <duplicate_orders>
+                <class>Kirchbergerknorr_DuplicateOrders_Model</class>
+            </duplicate_orders>
+        </models>
+    </global>
+    <crontab>
+        <jobs>
+            <kk_cancel_duplicate_orders_job>
+                <schedule>
+                    <config_path>kirchbergerknorr/duplicate_orders/cron</config_path>
+                </schedule>
+                <run>
+                    <model>duplicate_orders/observer::cancelOrders</model>
+                </run>
+            </kk_cancel_duplicate_orders_job>
+        </jobs>
+    </crontab>
+</config>
