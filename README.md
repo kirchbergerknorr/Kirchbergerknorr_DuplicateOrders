@@ -15,7 +15,7 @@ Add `require` and `repositories` sections to your composer.json as shown in exam
     ...
     
     "repositories": [
-        {"type": "git", "url": "https://github.com/kirchbergerknorr/DuplicateOrders"},
+        {"type": "git", "url": "https://github.com/kirchbergerknorr/Kirchbergerknorr_DuplicateOrders"},
     ],
     
     "require": {
