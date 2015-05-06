@@ -37,7 +37,7 @@ class Kirchbergerknorr_DuplicateOrders_Model_Observer
                     from sales_flat_order as t
                     where t.quote_id = quote
                     group by t.quote_id) as count
-                from sales_flat_order where state = 'new' having count > 1 and email_sent is NULL order by quote_id desc, created_at desc;
+                from sales_flat_order where state != 'canceled' having count > 1 and email_sent is NULL order by quote_id desc, created_at desc;
         ";
 
         try {
