@@ -33,11 +33,20 @@ class Kirchbergerknorr_DuplicateOrders_Model_Observer
         $query = "
                 select
                     increment_id, state, email_sent, customer_email, grand_total, created_at, quote_id as quote,
-                    (select count(t.quote_id)
-                    from sales_flat_order as t
-                    where t.quote_id = quote
-                    group by t.quote_id) as count
-                from sales_flat_order where state != 'canceled' having count > 1 and email_sent is NULL order by quote_id desc, created_at desc;
+                    (
+                        select count(t.quote_id)
+                        from sales_flat_order as t
+                        where t.quote_id = quote
+                        group by t.quote_id
+                    ) as count
+                from sales_flat_order 
+                where 
+                        state != 'canceled' 
+                    and state != 'duplicate' 
+                having 
+                        count > 1 
+                    and email_sent is NULL 
+                order by quote_id desc, created_at desc;
         ";
 
         try {
